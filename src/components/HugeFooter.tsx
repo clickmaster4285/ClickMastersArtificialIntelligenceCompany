@@ -1,18 +1,40 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
+import mascot from "@/assets/footer-robo.png";
 
 const columns = [
   {
     title: "Services",
-    links: ["Product Design", "Brand Identity", "Web Platforms", "Mobile Apps", "AI Engineering", "Design Systems"],
+    links: [
+      "Product Design",
+      "Brand Identity",
+      "Web Platforms",
+      "Mobile Apps",
+      "AI Engineering",
+      "Design Systems",
+    ],
   },
   {
     title: "Studio",
-    links: ["About", "Process", "Careers", "Press", "Sustainability", "Awards"],
+    links: [
+      "About",
+      "Process",
+      "Careers",
+      "Press",
+      "Sustainability",
+      "Awards",
+    ],
   },
   {
     title: "Resources",
-    links: ["Case Studies", "Journal", "Reports", "Newsletter", "FAQ", "Contact"],
+    links: [
+      "Case Studies",
+      "Journal",
+      "Reports",
+      "Newsletter",
+      "FAQ",
+      "Contact",
+    ],
   },
 ];
 
@@ -33,6 +55,7 @@ export function HugeFooter() {
           <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-6">
             Let&apos;s build it
           </p>
+
           <h2 className="text-5xl md:text-8xl font-semibold tracking-tighter leading-[0.92] max-w-5xl">
             Have an idea worth{" "}
             <span
@@ -48,14 +71,16 @@ export function HugeFooter() {
             </span>
             ? Tell us about it.
           </h2>
+
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
-              href="mailto:hello@clickmasters.studio"
+              href="mailto:sales@clickmastersdigitalmarketing.com"
               className="inline-flex items-center gap-3 bg-foreground text-background rounded-full px-7 py-4 text-sm font-medium hover:opacity-90 transition-opacity"
             >
-              hello@clickmasters.studio
+              sales@clickmastersdigitalmarketing.com
               <span>→</span>
             </a>
+
             <a
               href="#"
               className="inline-flex items-center gap-3 border border-foreground/40 rounded-full px-7 py-4 text-sm font-medium hover:bg-foreground hover:text-background transition-colors"
@@ -67,19 +92,47 @@ export function HugeFooter() {
 
         {/* Link columns */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-8 pb-16 border-b border-border/40">
-          <div className="col-span-2 max-w-sm">
-            <span className="text-2xl font-bold tracking-tight">
-              ClickMasters
-            </span>
-            <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-              A software house crafting AI products, web platforms and mobile
-              experiences that ship faster and feel unreasonably good.
-            </p>
-            <div className="mt-6 flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-xs text-muted-foreground">
-                Available for Q2 2026 partnerships
-              </span>
+          {/* Brand */}
+          <div className="col-span-2 max-w-md">
+            <div className="flex items-start gap-4">
+              <motion.div
+                animate={{
+                  y: [0, -10, 0],
+                  rotate: [-2, 2, -2],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+                className="shrink-0"
+              >
+                <img
+                  src={mascot}
+                  alt=""
+                  aria-hidden="true"
+                  className="w-20 md:w-24 h-auto object-contain"
+                />
+              </motion.div>
+
+              <div>
+                <span className="text-2xl font-bold tracking-tight">
+                  ClickMasters
+                </span>
+
+                <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                  A software house crafting AI products, web platforms and
+                  mobile experiences that ship faster and feel unreasonably
+                  good.
+                </p>
+
+                <div className="mt-6 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="text-xs text-muted-foreground">
+                    Available for Q2 2026 partnerships
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -88,6 +141,7 @@ export function HugeFooter() {
               <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-5">
                 {col.title}
               </p>
+
               <ul className="space-y-3">
                 {col.links.map((l) => (
                   <li key={l}>
@@ -116,11 +170,21 @@ export function HugeFooter() {
         {/* Bottom row */}
         <div className="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground">
-            <span>© 2026 Clickmasters. All rights reserved.</span>
-            <a href="#" className="hover:text-foreground">Privacy</a>
-            <a href="#" className="hover:text-foreground">Terms</a>
-            <a href="#" className="hover:text-foreground">Cookies</a>
+            <span>© 2026 ClickMasters. All rights reserved.</span>
+
+            <a href="#" className="hover:text-foreground">
+              Privacy
+            </a>
+
+            <a href="#" className="hover:text-foreground">
+              Terms
+            </a>
+
+            <a href="#" className="hover:text-foreground">
+              Cookies
+            </a>
           </div>
+
           <div className="flex items-center gap-5">
             {social.map((s) => (
               <a

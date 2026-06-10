@@ -207,7 +207,7 @@ export function HugeScrollSection() {
               href="#"
               className="inline-flex items-center gap-3 border border-border rounded-full px-8 py-4 text-sm font-medium hover:bg-card transition-colors"
             >
-              hello@clickmasters.studio
+              sales@clickmastersdigitalmarketing.com
             </a>
           </motion.div>
         </div>

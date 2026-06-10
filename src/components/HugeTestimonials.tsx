@@ -19,7 +19,7 @@ const testimonials: T[] = [
   },
   {
     quote:
-      "It's rare to find a partner that can hold the brand, the product and the engineering quality bar at the same time. Clickmasters does all three.",
+      "It's rare to find a partner that can hold the brand, the product and the engineering quality bar at the same time. ClickMasters does all three.",
     name: "Daniel Okafor",
     role: "Head of Design",
     company: "Snapchat",

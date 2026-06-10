@@ -6,11 +6,11 @@ import { ArrowLeft, Send } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Clickmasters" },
+      { title: "Contact — ClickMasters" },
       {
         name: "description",
         content:
-          "Get in touch with Clickmasters. We'd love to hear about your project.",
+          "Get in touch with ClickMasters. We'd love to hear about your project.",
       },
     ],
   }),
@@ -212,10 +212,10 @@ function ContactPage() {
             <p className="text-xs text-muted-foreground pt-4">
               Prefer email?{" "}
               <a
-                href="mailto:hello@clickmasters.studio"
+                href="mailto:sales@clickmastersdigitalmarketing.com"
                 className="underline underline-offset-4 hover:text-foreground transition-colors"
               >
-                hello@clickmasters.studio
+                sales@clickmastersdigitalmarketing.com
               </a>
             </p>
           </motion.form>

@@ -16,17 +16,25 @@ import AiTagSliderSection from "@/components/AiTagSliderSection";
 
 import AwardsSection from "@/components/AwardSection";
 import Testimonials3DRoom from "@/components/Testimonial";
-
+import logo from "@/assets/logo.png";
 
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Clickmasters — A software house that ships what's next" },
+      { title: "ClickMasters — A software house that ships what's next" },
       {
         name: "description",
         content:
-          "Clickmasters is a software house crafting AI products, web platforms and mobile experiences for the brands you know.",
+          "ClickMasters is a software house crafting AI products, web platforms and mobile experiences for the brands you know.",
+      },
+      
+    ],
+
+     links: [
+      {
+        rel: "icon",
+        href: logo,
       },
     ],
   }),
