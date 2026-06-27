@@ -34,9 +34,15 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charSet="UTF-8" />
-        <meta name="theme-color" content="#000000" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charSet="UTF-8" />
+  <meta name="theme-color" content="#000000" />
+  
+  {/* Add this line */}
+  <meta 
+    name="google-site-verification" 
+    content="lQD9tx-IDq-CHdPXb1RRZA-E6X7KljKdYG5O5c_vuDE" 
+  />
 
         {/* Google Tag Manager (Head Script) */}
         <Script id="gtm-script" strategy="beforeInteractive">
